@@ -8,7 +8,7 @@ Release:	4
 Summary:	Type constraints and coercions for Perl
 License:	Artistic 2.0
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl-devel
