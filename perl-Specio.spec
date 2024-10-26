@@ -1,15 +1,14 @@
 %define	upstream_name    Specio
-%define upstream_version 0.42
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	0.48
+Release:	1
 
 Summary:	Type constraints and coercions for Perl
 License:	Artistic 2.0
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	https://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:  perl-devel
 BuildRequires:	perl(namespace::clean)
@@ -22,14 +21,14 @@ BuildArch:	noarch
 Type constraints and coercions for Perl
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL installdirs=vendor destdir=%{buildroot}
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes 
