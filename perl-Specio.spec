@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
 Source0:	https://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:  perl-devel
 BuildRequires:	perl(namespace::clean)
 BuildRequires:	perl(Module::Build)
