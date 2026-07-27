@@ -1,7 +1,7 @@
 %define	upstream_name    Specio
 
 Name:		perl-%{upstream_name}
-Version:	0.48
+Version:	0.53
 Release:	1
 
 Summary:	Type constraints and coercions for Perl
